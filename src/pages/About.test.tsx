@@ -5,6 +5,7 @@ import userEvent from "@testing-library/user-event";
 
 describe("About page", () => {
     it('should render the about page', () => {
+        console.log('about page :>> ');
         render(<About />);
         expect(screen.getByText(/about page/i)).toBeInTheDocument();
     });
